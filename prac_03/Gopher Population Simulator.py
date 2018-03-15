@@ -11,11 +11,11 @@ POP_DECREASE_UPPER = 25
 
 def main():
 
-    starting_point = 0
+    year = 0
     new_population = POPULATION
     print("Welcome to the Gopher Population Simulator!")
 
-    while starting_point < PERIOD:
+    while year < PERIOD:
 
         born_pop_percent = get_percentage(POP_INCREASE_LOWER, POP_INCREASE_UPPER)
         born_pop = born_pop_percent * new_population
@@ -26,11 +26,11 @@ def main():
         dead_pop = int(dead_pop)
 
         new_population = new_population + born_pop - dead_pop
-        starting_point += 1
+        year += 1
 
         print("Year {}\n*****\n{} gophers were born. {} died.\n"
-              "Population: {}\n".format(starting_point, born_pop,
-                                      dead_pop, new_population))
+              "Population: {}\n".format(year, born_pop,
+                                        dead_pop, new_population))
 
 
 def get_percentage(lower, upper):
