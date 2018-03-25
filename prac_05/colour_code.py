@@ -1,3 +1,5 @@
+#function to search in database
+
 COLOURS = {"AliceBlue": "#f0f8ff",
            "Antique White": "#faebd7",
            "beige": "#f5f5dc",
