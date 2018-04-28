@@ -1,3 +1,5 @@
+#function to count words in a string
+
 word_count = {}
 string_to_count = str(input("Enter string"))
 string_to_count = string_to_count.strip().split(" ")
@@ -7,7 +9,7 @@ for word in string_to_count:
         word_count[word] += 1
     else:
         word_count[word] = 1
-print(word_count)
+
 word_list = sorted(word_count)
 length_check = []
 for word in word_list:
